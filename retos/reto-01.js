@@ -8,7 +8,10 @@ const ovejas = [
 ];
 
 const countOvejas = (ovejas) => {
-  return ovejas.filter(oveja => oveja.color.toLowerCase() === 'rojo' && oveja.name.toLowerCase().includes('a') && oveja.name.toLowerCase().includes('n'));
+  return ovejas
+    .filter(oveja => oveja.color.toLowerCase() === 'rojo')
+    .filter(oveja => oveja.name.toLowerCase().includes('a'))
+    .filter(oveja => oveja.name.toLowerCase().includes('n'));
 };
 
 const result = countOvejas(ovejas);

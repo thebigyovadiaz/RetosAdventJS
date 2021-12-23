@@ -1,5 +1,7 @@
-const carta = 'bici coche balón _playstation bici coche peluche';
-const arrGifs = carta.split(' ').filter(gif => !gif.includes('_'))
+const carta = 'bici coche  balón _playstation  bici coche peluche';
+const arrGifs = carta.split(' ')
+  .filter(gif => !gif.includes('_'))
+  .filter(item => item)
 
 const result = arrGifs.reduce((acc, value) => {
   if (!acc[value]) {

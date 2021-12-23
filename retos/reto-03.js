@@ -12,7 +12,7 @@ const searchStr = (str) => {
   const end = str.indexOf(')') + 1;
   
   if (search && searchII && (end > init)) {
-    const sliceStr = str.slice(init + 1, end - 1);    
+    const sliceStr = str.slice(init + 1, end - 1);
     if (!sliceStr || sliceStr.includes('[') || sliceStr.includes(']') || sliceStr.includes('{') || sliceStr.includes('}')) return false;
     
     return true;
@@ -21,4 +21,4 @@ const searchStr = (str) => {
   }
 }
 
-console.log(searchStr(letter));
+console.log(searchStr(letterV));
